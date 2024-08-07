@@ -6,7 +6,7 @@ me<-function(x){c(m=mean(x,na.rm=T),se=sd(x,na.rm=T)/sqrt(sum(!is.na(x))))}
 sd.sum<-function(sd){
 	sqrt(sum(sd^2,na.rm=TRUE))}
 
-setwd('/Users/hyli0001/Documents/wd/7_Branch_turnover/Writing/PNAS/Revision_2/R_code')
+setwd('/R_code')
 gc<-read.table('GlobalCarbonPartitioning_Luyssaert_2007.txt',sep='\t',head=TRUE)
 gc$NPP.area<-gc$NPP*gc$Area
 gc$NPPw.area<-gc$NPPw*gc$Area
